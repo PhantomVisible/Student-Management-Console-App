@@ -13,6 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         while (true) {
+        	System.out.println("test1");
             displayMenu();
             int choice = getChoice();
             
