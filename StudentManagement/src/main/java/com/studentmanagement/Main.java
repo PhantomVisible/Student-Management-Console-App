@@ -29,6 +29,15 @@ public class Main {
                     deleteStudent();
                     break;
                 case 5:
+                    addOrUpdateCourse();
+                    break;
+                case 6:
+                    removeCourse();
+                    break;
+                case 7:
+                    viewStudentCourses();
+                    break;
+                case 8:
                     System.out.println("Exiting...");
                     scanner.close();
                     return;
@@ -44,7 +53,10 @@ public class Main {
         System.out.println("2. View All Students");
         System.out.println("3. Update Student");
         System.out.println("4. Delete Student");
-        System.out.println("5. Exit");
+        System.out.println("5. Add/Update Course & Note");
+        System.out.println("6. Remove Course");
+        System.out.println("7. View Student Courses & Average");
+        System.out.println("8. Exit");
         System.out.print("Enter your choice: ");
     }
 
@@ -129,5 +141,75 @@ public class Main {
         } else {
             System.out.println("Student not found.");
         }
+
     }
+    private static void addOrUpdateCourse() {
+        System.out.println("\n=== Add or Update Course ===");
+        System.out.print("Enter student ID: ");
+        String id = scanner.nextLine();
+
+        Student student = studentService.getStudentById(id);
+        if (student == null) {
+            System.out.println("Student not found.");
+            return;
+        }
+
+        System.out.print("Enter course name: ");
+        String courseName = scanner.nextLine();
+
+        System.out.print("Enter note (0–20): ");
+        double note;
+        try {
+            note = Double.parseDouble(scanner.nextLine());
+            if (note < 0 || note > 20) {
+                System.out.println("Invalid note. Must be between 0 and 20.");
+                return;
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid number.");
+            return;
+        }
+
+        student.addOrUpdateCourse(courseName, note);
+        studentService.updateStudent(student);
+        System.out.println("Course saved successfully!");
+    }
+
+    private static void removeCourse() {
+        System.out.println("\n=== Remove Course ===");
+        System.out.print("Enter student ID: ");
+        String id = scanner.nextLine();
+
+        Student student = studentService.getStudentById(id);
+        if (student == null) {
+            System.out.println("Student not found.");
+            return;
+        }
+
+        System.out.print("Enter course name to remove: ");
+        String courseName = scanner.nextLine();
+
+        if (student.removeCourse(courseName)) {
+            studentService.updateStudent(student);
+            System.out.println("Course removed successfully!");
+        } else {
+            System.out.println("Course not found.");
+        }
+    }
+
+    private static void viewStudentCourses() {
+        System.out.println("\n=== View Student Courses ===");
+        System.out.print("Enter student ID: ");
+        String id = scanner.nextLine();
+
+        Student student = studentService.getStudentById(id);
+        if (student == null) {
+            System.out.println("Student not found.");
+            return;
+        }
+
+        System.out.println("Courses for " + student.getName() + ":");
+        student.displayCourses();
+    }
+
 }
