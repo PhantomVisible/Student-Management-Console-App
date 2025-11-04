@@ -15,7 +15,7 @@ public class Main {
             displayMenu();
             int choice = getChoice();
 
-            
+
             switch (choice) {
                 case 1:
                     addStudent();
