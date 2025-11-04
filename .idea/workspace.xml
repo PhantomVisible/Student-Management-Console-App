@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29b8bd6d-e565-4eb3-bcb6-64d656958862" name="Changes" comment="" />
+    <list default="true" id="8aec545b-8d82-4434-b4af-a97ef78ced17" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentManagement/StudentManagement.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentManagement/src/main/java/com/studentmanagement/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentManagement/src/main/java/com/studentmanagement/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentManagement/src/main/java/com/studentmanagement/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentManagement/src/main/java/com/studentmanagement/service/StudentService.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,43 +26,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ilyassfaquih"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/PhantomVisible/Student-Management-Console-App.git",
-    "accountId": "0f0ac7cd-2194-41b8-8068-38f63cdafbbe"
-  }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="34yNos3ZQxZIOAQm7cq9bdUZ1X3" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "git-widget-placeholder": "#1 on KAN-10-Courses-Notes"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.arkx.studentManagement.main.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.studentmanagement.Main" />
       <module name="Student-Management-Console-App" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.arkx.studentManagement.main.*" />
+          <option name="PATTERN" value="com.studentmanagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,25 +49,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="29b8bd6d-e565-4eb3-bcb6-64d656958862" name="Changes" comment="" />
-      <created>1762182029710</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1762182029710</updated>
-    </task>
     <servers />
   </component>
 </project>
