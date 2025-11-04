@@ -1,4 +1,4 @@
-package com.studentmanagement.model;
+package StudentManagement.model;
 
 public class Course {
     private String name;

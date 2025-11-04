@@ -1,4 +1,6 @@
-package com.studentmanagement.model;
+package StudentManagement.model;
+
+import StudentManagement.model.Course;
 
 import java.util.ArrayList;
 import java.util.List;
