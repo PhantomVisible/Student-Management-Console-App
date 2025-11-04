@@ -3,6 +3,8 @@ package com.studentmanagement.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.StudentManagement.model.Course;
+
 public class Student {
     private String id;
     private String name;
@@ -51,11 +53,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return "ID: " + id + " | Name: " + name + " | Email: " + email + " | Average: " + String.format("%.2f", getAverage());
     }
     // Add or update a course for this student
     public void addOrUpdateCourse(String courseName, double note) {
@@ -74,11 +72,9 @@ public class Student {
     }
 
     // Calculate average note
-    public double calculateAverage() {
-        if (courses.isEmpty()) return 0;
-        double sum = 0;
-        for (Course c : courses) sum += c.getNote();
-        return sum / courses.size();
+    public double getAverage() {
+        return courses.isEmpty() ? 0 :
+                courses.stream().mapToDouble(Course::getNote).average().orElse(0);
     }
 
     // Display all courses with notes
@@ -89,7 +85,7 @@ public class Student {
             for (Course c : courses) {
                 System.out.println(" - " + c.getName() + ": " + c.getNote());
             }
-            System.out.println("Average: " + String.format("%.2f", calculateAverage()));
+            System.out.println("Average: " + String.format("%.2f", getAverage()));
         }
     }
 

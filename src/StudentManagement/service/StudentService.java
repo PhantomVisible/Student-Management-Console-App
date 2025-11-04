@@ -2,7 +2,9 @@ package com.studentmanagement.service;
 
 import com.studentmanagement.model.Student;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StudentService {
     private List<Student> students;
@@ -42,5 +44,17 @@ public class StudentService {
     // Delete
     public boolean deleteStudent(String id) {
         return students.removeIf(student -> student.getId().equals(id));
+    }
+    //
+    public Student getBestStudent() {
+        return students.stream()
+                .max(Comparator.comparingDouble(Student::getAverage))
+                .orElse(null);
+    }
+    //
+    public List<Student> getFailingStudents() {
+        return students.stream()
+                .filter(s -> s.getAverage() < 10)
+                .collect(Collectors.toList());
     }
 }

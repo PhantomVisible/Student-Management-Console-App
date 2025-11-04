@@ -56,7 +56,9 @@ public class Main {
         System.out.println("5. Add/Update Course & Note");
         System.out.println("6. Remove Course");
         System.out.println("7. View Student Courses & Average");
-        System.out.println("8. Exit");
+        System.out.println("8. Show Best Student");
+        System.out.println("9. Show Failing Students");
+        System.out.println("10. Exit");
         System.out.print("Enter your choice: ");
     }
 
@@ -210,6 +212,16 @@ public class Main {
 
         System.out.println("Courses for " + student.getName() + ":");
         student.displayCourses();
+    }
+    private static void showBestStudent() {
+        Student best = studentService.getBestStudent();
+        if (best != null)
+            System.out.println("Best Student: " + best);
+    }
+
+    private static void showFailingStudents() {
+        System.out.println("Failing Students (<10):");
+        studentService.getFailingStudents().forEach(System.out::println);
     }
 
 }
