@@ -15,7 +15,10 @@ public class Main {
             displayMenu();
             int choice = getChoice();
 
+<<<<<<< Updated upstream:src/StudentManagement/Main.java
 
+=======
+>>>>>>> Stashed changes:StudentManagement/src/main/java/com/studentmanagement/Main.java
             switch (choice) {
                 case 1:
                     addStudent();
@@ -71,13 +74,13 @@ public class Main {
 
     private static void addStudent() {
         System.out.println("\n=== Add New Student ===");
-        
+
         System.out.print("Enter student ID: ");
         String id = scanner.nextLine();
-        
+
         System.out.print("Enter student name: ");
         String name = scanner.nextLine();
-        
+
         System.out.print("Enter student email: ");
         String email = scanner.nextLine();
 
@@ -89,7 +92,7 @@ public class Main {
     private static void viewAllStudents() {
         System.out.println("\n=== All Students ===");
         List<Student> students = studentService.getAllStudents();
-        
+
         if (students.isEmpty()) {
             System.out.println("No students found.");
             return;
@@ -102,7 +105,7 @@ public class Main {
 
     private static void updateStudent() {
         System.out.println("\n=== Update Student ===");
-        
+
         System.out.print("Enter student ID to update: ");
         String id = scanner.nextLine();
 
@@ -133,7 +136,7 @@ public class Main {
 
     private static void deleteStudent() {
         System.out.println("\n=== Delete Student ===");
-        
+
         System.out.print("Enter student ID to delete: ");
         String id = scanner.nextLine();
 
