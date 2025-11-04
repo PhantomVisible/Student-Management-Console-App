@@ -14,6 +14,7 @@ public class Main {
         while (true) {
             displayMenu();
             int choice = getChoice();
+
             
             switch (choice) {
                 case 1:
