@@ -10,18 +10,16 @@ public class Student {
     private String email;
     private Map<Course, Double> courses = new LinkedHashMap<>();
 
+    // Constructor initializes id, name, and email
     public Student(int id, String name, String email) {
         this.id=id;
         this.name=name;
         this.email=email;
     }
 
+    // Standard getters and setters
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -44,17 +42,16 @@ public class Student {
         return courses;
     }
 
-    public void setCourses(Map<Course, Double> courses) {
-        this.courses = courses;
-    }
+
+    // Adds a new course or updates the grade if it already exists
     public void addOrUpdateCourseGrade(Course course, double grade) {
         courses.put(course, grade);
     }
-
+    // Removes a course; returns true if course was present
     public boolean removeCourse(Course course) {
         return courses.remove(course) != null;
     }
-
+    // Calculates average grade across all courses; returns 0 if no courses
     public double average() {
         if (courses.isEmpty())
             return 0.0;
@@ -64,10 +61,12 @@ public class Student {
         return sum/courses.size();
     }
 
+    // Returns a string representation of the student
     @Override public String toString() {
         return "Student{id=" + id + ", name='" + name + "', email='" + email + "', avg=" + String.format("%.2f", average()) + ", courses=" + coursesToString() + "}";
     }
 
+    // Converts the courses map into a string like "MATH=15,SCIENCE=18"
     public String coursesToString() {
         if (courses.isEmpty()) return "";
         StringBuilder sb=new StringBuilder();
@@ -80,6 +79,7 @@ public class Student {
         return sb.toString();
     }
 
+    // Students are equal if their IDs match
     @Override public boolean equals(Object o) {
         if(this==o) return true;
         if(o==null||getClass()!=o.getClass())
@@ -88,6 +88,7 @@ public class Student {
             return id==s.id;
     }
 
+    // Hash code based on student ID
     @Override public int hashCode() {
         return Objects.hash(id);
     }

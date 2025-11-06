@@ -12,24 +12,27 @@ import java.util.Scanner;
 
 public class Main {
 
+    // File where student data will be saved/loaded
     private static final String STORAGE_FILE="students.txt";
 
     public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
 
+        // Initialize storage and service layer
         FileStorage storage=new FileStorage(STORAGE_FILE);
         StudentService service=new StudentServiceImpl(storage);
 
+        // Main loop: keep running until user chooses to exit
         loop: while(true) {
-            printMenu();
-            String choice=sc.nextLine().trim();
+            printMenu();// display menu options
+            String choice=sc.nextLine().trim(); // get user input
 
 
-
+            // Handle user choice
             switch(choice) {
 
-                case "1":
+                case "1": // Add new student
                     try {
                         System.out.print("Enter id: "); int id=Integer.parseInt(sc.nextLine().trim());
                         System.out.print("Name: "); String name=sc.nextLine().trim();
@@ -43,17 +46,17 @@ public class Main {
                     }
                     break;
 
-                case "2":
+                case "2": // View all students
                     List<Student> all=service.getAllStudents();
                     if(all.isEmpty())
                         System.out.println("No students.");
                     else
-                        all.forEach(System.out::println);
+                        all.forEach(System.out::println); // print each student
                     break;
 
-                case "3":
+                case "3": // Update student information
                     try{
-                        System.out.print("Student id to update: ");
+                        System.out.print("Student id to update: "); // Search for Student by ID
                         int uid=Integer.parseInt(sc.nextLine().trim());
                         Optional<Student> opt=service.findById(uid);
 
@@ -75,9 +78,9 @@ public class Main {
                     }
                     break;
 
-                case "4":
+                case "4": // Delete a student
                     try{
-                        System.out.print("Student id to delete: ");
+                        System.out.print("Student id to delete: "); // Search for Student by ID
                         int did=Integer.parseInt(sc.nextLine().trim());
                         boolean deleted=service.deleteStudent(did);
                         System.out.println(deleted?"Deleted.":"Student not found.");
@@ -87,7 +90,7 @@ public class Main {
                     }
                     break;
 
-                case "5":
+                case "5": // Add or update a course grade for a student
                     try{
                         System.out.print("Student id: ");
                         int sid=Integer.parseInt(sc.nextLine().trim());
@@ -97,13 +100,13 @@ public class Main {
                             System.out.println("Student not found.");
                             break;
                         }
-                        System.out.println("Available courses:");
 
+                        System.out.println("Available courses:"); // Prints all Courses
                         for(Course c:Course.values())
                             System.out.println(" - "+c.name());
-                        System.out.print("Course: ");
-                        String cname=sc.nextLine().trim();
-                        Course course=Course.fromString(cname);
+                            System.out.print("Course: ");
+                            String cname=sc.nextLine().trim();
+                            Course course=Course.fromString(cname);
 
                         if(course==null){
                             System.out.println("Unknown course.");
@@ -124,9 +127,9 @@ public class Main {
                     }
                     break;
 
-                case "6":
+                case "6": // Remove a course from a student
                     try{
-                        System.out.print("Student id: ");
+                        System.out.print("Student id: "); // Search for Student by ID
                         int sid2=Integer.parseInt(sc.nextLine().trim());
                         Optional<Student> opt2=service.findById(sid2);
                         if(opt2.isEmpty()){
@@ -148,12 +151,12 @@ public class Main {
                     }
                     break;
 
-                case "7":
+                case "7": // View a student's courses and average
                     try{
-                        System.out.print("Student id: ");
+                        System.out.print("Student id: "); // Search for Student by ID
                         int vsid=Integer.parseInt(sc.nextLine().trim());
                         Optional<Student> opt3=service.findById(vsid);
-                        Double avg = service.getStudentAverage(vsid);
+                        Double avg = service.getStudentAverage(vsid); // Get average using service layer
                         if (avg == null)
                             System.out.println("No courses.");
                         else
@@ -175,9 +178,9 @@ public class Main {
                         System.out.println("No students with courses.");
                     break;
 
-                case "9":
+                case "9": // Show failing students
                     try {
-                        double threshold = 10.0; // fixed threshold
+                        double threshold = 10.0; // (average < 10)
                         List<Student> failing = service.getFailingStudents(threshold);
 
                         if (failing.isEmpty())
@@ -193,11 +196,11 @@ public class Main {
                     }
                     break;
 
-                case "10":
+                case "10": // Exit the app
                     System.out.println("Closing Student Management Console App.");
                     break loop;
 
-                default:
+                default: // Handle invalid menu input
                     System.out.println("Invalid choice, type a number from the menu");
                     break;
             }
@@ -205,7 +208,7 @@ public class Main {
         sc.close();
     }
 
-    private static void printMenu() {
+    private static void printMenu() {  // Prints the main menu to the console
         System.out.println("\n=== Student Management System ===");
         System.out.println("1. Add Student");
         System.out.println("2. View All Students");
