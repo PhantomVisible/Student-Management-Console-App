@@ -1,1 +1,0 @@
-# Student-Management-Console-App
