@@ -4,69 +4,93 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f2a7b63-f260-43b0-ba0e-56cb5d67ad55" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student-Management-Console-App.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Student-Management-Console-App/StudentManagement/StudentManagement.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Student-Management-Console-App/com/studentmanagement/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Student-Management-Console-App/com/studentmanagement/model/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Student-Management-Console-App/com/studentmanagement/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Student-Management-Console-App/com/studentmanagement/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManagement/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManagement/StudentManagement.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManagement/model/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManagement/model/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManagement/service/StudentService.java" beforeDir="false" />
-    </list>
+    <list default="true" id="7874f9b3-4c42-4976-9b23-cab7271490d1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PhantomVisible"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PhantomVisible&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/PhantomVisible/Student-Management-Console-App.git",
-    "accountId": "746838c7-f1bc-44fd-b074-cdb2561997b8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PhantomVisible/Student-Management-Console-App.git&quot;,
+    &quot;accountId&quot;: &quot;746838c7-f1bc-44fd-b074-cdb2561997b8&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="356ghz4XVvKXa8xbFXEkrYKut7M" />
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="353T8JUo2UMnx2wOcHbQdd2ZcZ7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#6 on KAN-12-File-Storage",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/amine/Documents/GitHub/Student-Management-Console-App/src/StudentManagement"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amine/Documents/GitHub/Student-Management-Console-App/StudentManagement&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\amine\Documents\GitHub\Student-Management-Console-App\src\StudentManagement" />
-    </key>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="src" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="src" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="src" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -77,11 +101,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9f2a7b63-f260-43b0-ba0e-56cb5d67ad55" name="Changes" comment="" />
-      <created>1762436060968</created>
+      <changelist id="7874f9b3-4c42-4976-9b23-cab7271490d1" name="Changes" comment="" />
+      <created>1762337595029</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1762436060968</updated>
+      <updated>1762337595029</updated>
     </task>
     <servers />
   </component>
