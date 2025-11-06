@@ -198,7 +198,7 @@ public class Main {
                     break loop;
 
                 default:
-                    System.out.println("Invalid choice.");
+                    System.out.println("Invalid choice, type a number from the menu");
                     break;
             }
         }
@@ -211,12 +211,12 @@ public class Main {
         System.out.println("2. View All Students");
         System.out.println("3. Update Student");
         System.out.println("4. Delete Student");
-        System.out.println("5. Add/Update Course & Note");
+        System.out.println("5. Add/Update Course Note");
         System.out.println("6. Remove Course");
         System.out.println("7. View Student Courses & Average");
         System.out.println("8. Show Best Student");
         System.out.println("9. Show Failing Students");
         System.out.println("10. Exit");
-        System.out.print("Enter your choice: ");
+        System.out.print("Enter your choice (number): ");
     }
 }
